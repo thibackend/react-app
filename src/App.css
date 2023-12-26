@@ -1,27 +1,8 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -33,10 +14,138 @@
   }
 }
 
-.card {
-  padding: 2em;
+#root {
+  text-align: center;
+  background: linear-gradient(0.25turn, #9005D4, #08B5FD);
 }
 
-.read-the-docs {
-  color: #888;
+/* -------------------------- my css---------------------- */
+.row {
+  display: flex;
+}
+
+.App {
+  text-align: center;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.title_toggle {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: start;
+  color: #ffffff;
+  letter-spacing: 5.5px;
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.container {
+  max-width: 50%;
+  margin: auto;
+  max-height: 260px;
+}
+
+.add_new {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 7px;
+  padding: 5px;
+  min-height: 50px;
+}
+
+.add_new_icon {
+  margin: auto 0;
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.enter-task {
+  flex: 9 1 0;
+  border: none;
+  height: 50px;
+}
+
+.enter-task:focus-visible {
+  outline: none;
+}
+
+.enter-task::placeholder {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+
+.btn-add {
+  flex: 1 1 0;
+  border: none;
+  background: white;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+}
+
+
+.manage-task {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 40px 0;
+  box-shadow: 2px 2px 10px rgb(183, 180, 180);
+}
+
+.task_title {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.clear-all-tasks {
+  cursor: pointer;
+}
+
+.task-item {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name {
+  text-align: start;
+  flex: 3;
+}
+
+.item-action {
+  display: flex;
+  justify-content: space-around;
+}
+
+.edit,
+.remove {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.form_container {
+  z-index: 100;
+  position: absolute;
+  width:500px;
+  height:500px;
+  background-color: #f69d3c;
 }
